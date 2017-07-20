@@ -1,0 +1,18 @@
+•	¿En que consiste la convolución y cómo puede ser calculada? (Puede dar una definición matemática y/o ejemplos).
+Se denomina convolución a una función, de forma lineal y continua, transforma una señal de entrada en una nueva señal de salida.
+En un problema típico de mejora de imagen la función f(x,y) es conocida, ya que corresponde a la imagen que se quiere mejorar, y una vez calculada la función transformada F(u,v), se trata de encontrar la función G(u,v) que nos proporciona la mejor imagen corregida h(x,y), cuya transformada será H(u,v). Esto puede expresarse por
+
+La matriz de convolución se desplaza sobre la imagen de tal forma que el elemento central de la matriz de convolución coincida con cada uno de los píxeles de la imagen.
+
+•	¿Qué es el kernel de un filtro y para que se utiliza?
+Reemplazamos cada píxel con la media ponderada de los píxeles vecinos • Los pesos se denominan el kernel (o máscara) del filtro
+
+•	¿En qué consiste un filtro Gaussiano?
+Simulan una distribución gaussiana bivariante. El valor máximo aparece en el pixel central y disminuye hacia los extremos tanto más rápido cuanto menor sea el parámetro de desviación típica s. El resultado será un conjunto de valores entre 0 y 1
+
+•	¿En qué consiste el Filtro Sobel? ¿para qué sirve?
+El filtro Sobel detecta los bordes horizontales y verticales separadamente sobre una imagen en escala de grises. Las imágenes en color se convierten en RGB en niveles de grises. Como con el filtro Laplace, el resultado es una imagen transparente con líneas negras y algunos restos de color.
+
+•	Describa el algoritmo de detección de bordes Canny.
+Algoritmo de Canny es un operador desarrollado por John F. Canny en 1986 que utiliza un algoritmo de múltiples etapas para detectar una amplia gama de bordes en imágenes.1 Lo más importante es que Canny también desarrolló una teoría computacional acerca de la detección de bordes que explica por qué la técnica funciona.
+
